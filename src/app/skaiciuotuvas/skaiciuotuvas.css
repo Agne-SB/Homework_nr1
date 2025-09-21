@@ -1,0 +1,89 @@
+/* ---- Minimal BMI card styles ---- */
+.kmi-card{
+  --accent: #2c9aa6;
+  --text: #0f172a;
+  --muted: #64748b;
+  --line: #dbe3ea;
+
+  height: 450px;
+  width: min(420px, 60vw);
+  padding: 40px 44px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 30px rgba(2, 8, 23, .06);
+  display: grid;
+  gap: 20px;
+  align-content: start;
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+.kmi-card label{
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.kmi-card input{
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line);
+  background: #f8fafc;
+  color: var(--text);
+  font: inherit;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+
+.kmi-card input:focus{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(44,154,166,.14);
+  background: #fff;
+}
+
+.kmi-card button{
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #2c9aa6, #1f8a94);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: .2px;
+  cursor: pointer;
+  transition: transform .05s, box-shadow .2s, filter .2s;
+}
+.kmi-card button:disabled{background: #7d898a
+}
+.kmi-card button:active{ transform: translateY(1px); }
+
+.kmi-card .kmi-output{
+  margin-top: 4px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background: #eef9fb;
+  border: 1px solid rgba(44,154,166,.25);
+  color: #155e63;
+  font-weight: 700;
+}
+
+.kmi-card-decoration {
+  min-height: 420px;
+  background-image: url('assets/images/Asset 3.png');
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  padding-bottom: 0;
+}
+
+.kmi-card-decoration > .kmi-card{
+  bottom: 0;
+  z-index: 1;
+}
+
+
+

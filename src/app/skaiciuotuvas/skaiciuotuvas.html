@@ -1,0 +1,18 @@
+
+
+<div class="kmi-card-decoration">
+  <div class="kmi-card">
+    <span class="kmi-output"> Jūsų KMI: {{ (result) }}</span>
+    <label>
+      Svoris (kg)
+    <input type="text" [(ngModel)]="weight" placeholder="Įveskite savo svorį">
+    </label>
+
+    <label>
+      Ūgis (cm)
+    <input type="text" [(ngModel)]="height" placeholder="Įveskite savo ūgį">
+
+    <button [disabled]="(weight==null || height==null)" (click)="kmi()">Skaičiuoti</button>
+    </label>
+  </div>
+</div>
